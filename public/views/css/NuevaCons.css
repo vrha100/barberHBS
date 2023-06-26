@@ -1,0 +1,118 @@
+div.form-box{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(fondo2.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    width: 100%;
+}
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    background: #fff;
+    border: 2px solid #16222C;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 3em;
+    color: #010103;
+    text-align: center;
+}
+
+h3{
+    font-size: 1em;
+    color: #010103;
+    text-align: center;
+}
+
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #5D6266;
+}
+
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #5D6266;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -6px;
+}
+
+.inputbox input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #5D6266;
+}
+
+.forget{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #5D6266;
+    display: flex;
+    justify-content: center;
+}
+
+.forget label input{
+    margin-right: 3px;
+
+}
+
+.forget label a{
+    color: #0077D3;
+    text-decoration: none;
+}
+
+.forget label a:hover{
+    text-decoration: underline;
+
+}
+
+
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background: #0077D3;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: #010103;
+}
